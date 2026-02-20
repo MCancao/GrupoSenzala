@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo Senzala - Núcleo Local</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #0E0E0E;
+color: white;
+}
+
+section {
+padding: 80px 20px;
+text-align: center;
+}
+
+.hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  top: 0;
+  left: 0;
+}
+
+
+
+h1 {
+font-size: 48px;
+}
+
+.button {
+padding: 15px 30px;
+margin: 10px;
+background-color: #1F7A3A;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+display: inline-block;
+}
+
+.button.secondary {
+background-color: transparent;
+border: 2px solid white;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+}
+
+.card {
+background-color: #1a1a1a;
+padding: 20px;
+border-radius: 8px;
+}
+
+footer {
+background-color: #000;
+padding: 30px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <video autoplay muted loop playsinline 
+         class="video-bg"
+         poster="capa.jpg">
+    <source src="capa.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-content">
+    <h1>Grupo Senzala Mestre Canção</h1>
+  </div>
+</section>
+
+<section>
+<h2>Tradição Mundial. Trabalho Sério Local.</h2>
+<p>Núcleo filiado ao Grupo Senzala, mantendo fundamentos, disciplina e evolução técnica.</p>
+</section>
+
+<section>
+<h2>Por Que Treinar Conosco?</h2>
+<div class="grid">
+<div class="card">Método estruturado</div>
+<div class="card">Respeito à tradição</div>
+<div class="card">Evolução progressiva</div>
+</div>
+</section>
+
+<section>
+<h2>Nossas Aulas</h2>
+<div class="grid">
+<div class="card">
+<h3>Infantil</h3>
+<p>Coordenação, disciplina e respeito.</p>
+</div>
+<div class="card">
+<h3>Jovens e Adultos</h3>
+<p>Condicionamento, fundamentos e jogo.</p>
+</div>
+<div class="card">
+<h3>Musicalidade</h3>
+<p>Berimbau, pandeiro e canto.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Sua Evolução Começa Agora</h2>
+<a href="#" class="button">Quero Treinar</a>
+</section>
+
+<footer>
+<p>© 2026 Grupo Senzala - Núcleo Local</p>
+</footer>
+
+</body>
+</html>
